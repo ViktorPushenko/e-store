@@ -1,0 +1,23 @@
+{
+  "name": "e-store",
+  "dependencies": {
+    "jquery": "~1.11",
+    "normalize.css": "~3.0.3",
+    "modernizr": "~2.8.3",
+    "placeholders": "~4.0.1",
+    "qtip2": "~2.2.1",
+    "bpopup": "~0.11.0"
+  },
+  "overrides": {
+  	"qtip2": {
+  		"main": [
+  			"./jquery.qtip.js",
+  			"./jquery.qtip.css"
+  		],
+  		"dependencies": {
+  			"jquery": "1.6.0"
+  		}
+  	}
+  }
+}
+
