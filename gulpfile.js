@@ -122,7 +122,7 @@ gulp.task('useref', function() {
 // ============ Fonts moving to Dist folder =============
 // 
 gulp.task('fonts', function() {
-	gulp.src('app/fonrs/*')
+	gulp.src('app/fonts/*')
 		.pipe(filter(['*.eot','*.svg','*.ttf','*.woff','*.woff2']))
 		.pipe(gulp.dest('dist/fonts/'));
 });
