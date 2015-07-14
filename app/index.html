@@ -12,16 +12,18 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <!-- build:css css/vendor.min.css -->
     <!-- bower:css-->
-    <link rel="stylesheet" href="/bower/normalize.css/normalize.css">
+    <link rel="stylesheet" href="../../bower/normalize.css/normalize.css">
+    <link rel="stylesheet" href="../../bower/qtip2/jquery.qtip.css">
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css fonts/fonts.min.css -->
+    <link rel="stylesheet" href="fonts/electra/electra_font.css">
     <!-- endbuild -->
     <!-- build:css css/main.min.css -->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/main.css">
     <!-- endbuild -->
     <!-- build:js js/modernizr.min.js -->
-    <script src="bower/modernizer/modernizr.js"></script>
+    <script src="bower/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
 
@@ -30,304 +32,321 @@
 <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его.</p>
 <![endif]-->
     <div class="wrapper">
-      <div class="main-content">
-        <header class="page-header">
-          <div class="container-big"></div>
-        </header>
-        <div class="container"> </div>
-        <a class="header-logo-link"><img src="img/logo.png" alt="logo" class="logo-img"><span class="header-logo-text">ЭпплShop</span></a>
-        <form id="callMe" role="form" class="form callMeForm">
-          <div class="form-group">
-            <label for="callMeName" class="label">Ваше имя</label>
-            <input id="callMeName" type="text" name="callMeName" placeholder="Введите Ваше имя" qtip-content="Укажите имя" class="input">
-          </div>
-          <div class="form-group">
-            <label for="callMePhone" class="label">Телефон</label>
-            <input id="callMePhone" type="text" name="callMePhone" placeholder="Введите телефон" qtip-content="Укажите номер телефон" class="input">
-          </div>
-          <div class="form-group">
-            <label for="callMeDay" class="label">Дата звонка</label>
-            <select size="1" qtip-position="left" class="select">
-              <option value="0">1</option>
-              <option value="1">2</option>
-              <option value="2">3</option>
-              <option value="3">4</option>
-              <option value="4">5</option>
-              <option value="5">6</option>
-              <option value="6">7</option>
-              <option value="7">8</option>
-              <option value="8">9</option>
-              <option value="9">10</option>
-              <option value="10">11</option>
-              <option value="11">12</option>
-              <option value="12">13</option>
-              <option value="13">14</option>
-              <option value="14">15</option>
-              <option value="15">16</option>
-              <option value="16">17</option>
-              <option value="17">18</option>
-              <option value="18">19</option>
-              <option value="19">20</option>
-              <option value="20">21</option>
-              <option value="21">22</option>
-              <option value="22">23</option>
-              <option value="23">24</option>
-              <option value="24">25</option>
-              <option value="25">26</option>
-              <option value="26">27</option>
-              <option value="27">28</option>
-              <option value="28">29</option>
-              <option value="29">30</option>
-              <option value="30">31</option>
-            </select>
-            <select size="1" qtip-position="right" class="select">
-              <option value="0">1</option>
-              <option value="1">2</option>
-              <option value="2">3</option>
-              <option value="3">4</option>
-              <option value="4">5</option>
-              <option value="5">6</option>
-              <option value="6">7</option>
-              <option value="7">8</option>
-              <option value="8">9</option>
-              <option value="9">10</option>
-              <option value="10">11</option>
-              <option value="11">12</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <textarea id="callMeComments" name="callMeComments" rows="4" class="textarea"></textarea>
-          </div>
-          <div class="form-group">
-            <button type="submit" class="btn btn-main">Отправить</button>
-            <button type="reset" class="btn btn-main">Очистить</button>
-          </div>
-        </form>
-        <div class="miniPics">
-          <a class="miniPics__item"><img src="img/mini-pics/mini-pic-1.jpg" alt="cool mini pic #1" class="miniPics__item-Pic"><span class="miniPics__item-text">cool mini pic #1</span></a>
-          <a class="miniPics__item"><img src="img/mini-pics/mini-pic-2.jpg" alt="cool mini pic #2" class="miniPics__item-Pic"><span class="miniPics__item-text">cool mini pic #2</span></a>
-          <a class="miniPics__item"><img src="img/mini-pics/mini-pic-3.jpg" alt="cool mini pic #3" class="miniPics__item-Pic"><span class="miniPics__item-text">cool mini pic #3</span></a>
-          <a class="miniPics__item"><img src="img/mini-pics/mini-pic-4.jpg" alt="cool mini pic #4" class="miniPics__item-Pic"><span class="miniPics__item-text">cool mini pic #4</span></a>
-          <a class="miniPics__item"><img src="img/mini-pics/mini-pic-5.jpg" alt="cool mini pic #5" class="miniPics__item-Pic"><span class="miniPics__item-text">cool mini pic #5</span></a>
-          <a class="miniPics__item"><img src="img/mini-pics/mini-pic-6.jpg" alt="cool mini pic #6" class="miniPics__item-Pic"><span class="miniPics__item-text">cool mini pic #6</span></a>
-          <a class="miniPics__item"><img src="img/mini-pics/mini-pic-7.jpg" alt="cool mini pic #7" class="miniPics__item-Pic"><span class="miniPics__item-text">cool mini pic #7</span></a>
-          <a class="miniPics__item"><img src="img/mini-pics/mini-pic-8.jpg" alt="cool mini pic #8" class="miniPics__item-Pic"><span class="miniPics__item-text">cool mini pic #8</span></a>
-          <a class="miniPics__item"><img src="img/mini-pics/mini-pic-9.jpg" alt="cool mini pic #9" class="miniPics__item-Pic"><span class="miniPics__item-text">cool mini pic #9</span></a>
-        </div><address class="address"><div class="address-text icon-address">г. Киев, ул. Новая  24б, офис 214.</div><div class="address-text icon-phone">+7(921) 322-12-32</div></address>
-        <div class="variable-content">
+      <div class="content-wrapper clearfix">
+        <aside class="sidebar left">
+          <a href="#" class="header-logo-link"><img src="img/logo.png" alt="logo" class="logo-img"><span class="hidden-text">ЭпплShop</span></a>
+          <form id="callMe" role="form" class="form callMeForm"><span class="form-header-text">Заказать звонок</span>
+            <div class="form-group clearfix">
+              <label for="callMeName" class="label">Ваше имя</label>
+              <input id="callMeName" type="text" name="callMeName" placeholder="Константин" qtip-content="Укажите имя" class="input">
+            </div>
+            <div class="form-group clearfix">
+              <label for="callMePhone" class="label">Телефон</label>
+              <input id="callMePhone" type="text" name="callMePhone" placeholder="+38 (067) 123-45-67" qtip-content="Укажите номер телефон" class="input">
+            </div>
+            <div class="form-group clearfix">
+              <label for="callMeDay" class="label">Дата звонка</label>
+              <div class="right">
+                <select size="1" qtip-position="left" class="select">
+                  <option value="0">1</option>
+                  <option value="1">2</option>
+                  <option value="2">3</option>
+                  <option value="3">4</option>
+                  <option value="4">5</option>
+                  <option value="5">6</option>
+                  <option value="6">7</option>
+                  <option value="7">8</option>
+                  <option value="8">9</option>
+                  <option value="9">10</option>
+                  <option value="10">11</option>
+                  <option value="11">12</option>
+                  <option value="12">13</option>
+                  <option value="13">14</option>
+                  <option value="14">15</option>
+                  <option value="15">16</option>
+                  <option value="16">17</option>
+                  <option value="17">18</option>
+                  <option value="18">19</option>
+                  <option value="19">20</option>
+                  <option value="20">21</option>
+                  <option value="21">22</option>
+                  <option value="22">23</option>
+                  <option value="23">24</option>
+                  <option value="24">25</option>
+                  <option value="25">26</option>
+                  <option value="26">27</option>
+                  <option value="27">28</option>
+                  <option value="28">29</option>
+                  <option value="29">30</option>
+                  <option value="30">31</option>
+                </select>
+                <select size="1" qtip-position="right" class="select">
+                  <option value="0">1</option>
+                  <option value="1">2</option>
+                  <option value="2">3</option>
+                  <option value="3">4</option>
+                  <option value="4">5</option>
+                  <option value="5">6</option>
+                  <option value="6">7</option>
+                  <option value="7">8</option>
+                  <option value="8">9</option>
+                  <option value="9">10</option>
+                  <option value="10">11</option>
+                  <option value="11">12</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group clearfix">
+              <textarea name="callMeComments" rows="3" placeholder="Комментарий" class="textarea callMeComments"></textarea>
+            </div>
+            <div class="form-group clearfix no-margin-bottom">
+              <button type="submit" class="btn btn-main left">Отправить</button>
+              <button type="reset" class="btn right">Очистить</button>
+            </div>
+          </form>
+          <div class="miniPics">
+            <ul class="miniPics-list">
+              <li class="miniPics__item">
+                <a href="#" class="miniPics__item-link"><img src="img/mini-pics/mini-pic-1.jpg" alt="cool mini pic #1" class="miniPics__item-Pic"><span class="hidden-text">cool mini pic #1</span></a>
+              </li>
+              <li class="miniPics__item">
+                <a href="#" class="miniPics__item-link"><img src="img/mini-pics/mini-pic-2.jpg" alt="cool mini pic #2" class="miniPics__item-Pic"><span class="hidden-text">cool mini pic #2</span></a>
+              </li>
+              <li class="miniPics__item">
+                <a href="#" class="miniPics__item-link"><img src="img/mini-pics/mini-pic-3.jpg" alt="cool mini pic #3" class="miniPics__item-Pic"><span class="hidden-text">cool mini pic #3</span></a>
+              </li>
+              <li class="miniPics__item">
+                <a href="#" class="miniPics__item-link"><img src="img/mini-pics/mini-pic-4.jpg" alt="cool mini pic #4" class="miniPics__item-Pic"><span class="hidden-text">cool mini pic #4</span></a>
+              </li>
+              <li class="miniPics__item">
+                <a href="#" class="miniPics__item-link"><img src="img/mini-pics/mini-pic-5.jpg" alt="cool mini pic #5" class="miniPics__item-Pic"><span class="hidden-text">cool mini pic #5</span></a>
+              </li>
+              <li class="miniPics__item">
+                <a href="#" class="miniPics__item-link"><img src="img/mini-pics/mini-pic-6.jpg" alt="cool mini pic #6" class="miniPics__item-Pic"><span class="hidden-text">cool mini pic #6</span></a>
+              </li>
+              <li class="miniPics__item">
+                <a href="#" class="miniPics__item-link"><img src="img/mini-pics/mini-pic-7.jpg" alt="cool mini pic #7" class="miniPics__item-Pic"><span class="hidden-text">cool mini pic #7</span></a>
+              </li>
+              <li class="miniPics__item">
+                <a href="#" class="miniPics__item-link"><img src="img/mini-pics/mini-pic-8.jpg" alt="cool mini pic #8" class="miniPics__item-Pic"><span class="hidden-text">cool mini pic #8</span></a>
+              </li>
+              <li class="miniPics__item">
+                <a href="#" class="miniPics__item-link"><img src="img/mini-pics/mini-pic-9.jpg" alt="cool mini pic #9" class="miniPics__item-Pic"><span class="hidden-text">cool mini pic #9</span></a>
+              </li>
+            </ul>
+          </div><address class="sidebar__address"><h3 class="sidebar__address-header">г.Москва, ул.Новая 246, офис 214.</h3><ul class="sidebar__address-ul"><li class="sidebar__address-point"> <a href="tel:+1234567890">+7(911) 322-12-32</a></li></ul></address></aside>
+        <div
+        class="container right right-content">
           <div class="slider">
             <div class="slider__wrap">
               <ul class="slider__list clearfix">
-                <li class="slider__item active"><img src="img/slider/slide-1.jpg" alt="slide-1" class="slider__img">
-                  <div class="slider__item-title"><a href="#" class="slider__item-link">Конкурс на концепт IPhone 7</a>
-                    <p class="slider__item-text">Выйграй iPad Air за самый необычный и интереный дизайн нового iPhone 7.</p>
-                  </div>
-                </li>
-                <li class="slider__item"><img src="img/slider/slide-2.jpg" alt="slide-2" class="slider__img">
-                  <div class="slider__item-title"><a href="#" class="slider__item-link">До 31 декабря, iPhone 4 за 9900 руб.</a>
-                    <p class="slider__item-text">Нет денег на шестой iPhone? Купи себе четвертый!</p>
-                  </div>
-                </li>
-                <li class="slider__item"><img src="img/slider/slide-3.jpg" alt="slide-3" class="slider__img">
-                  <div class="slider__item-title"><a href="#" class="slider__item-link">iMac за пол цены</a>
-                    <p class="slider__item-text">Принеси свой старый Mac и получи скидку на новый!</p>
-                  </div>
+                <li class="slider__item active"><img src="img/slider/slide-2.jpg" alt="slide-2" class="slider__img">
+                  <div class="slider__item-title"><a href="#" class="slider__item-link">Конкурс на концепт IPhone 7</a><span class="slider__item-text">Выйграй iPad Air за самый необычный  и интереный дизайн нового iPhone 7.</span></div>
                 </li>
               </ul>
-              <div class="slider__buttons slider__buttons-left"><a href="#" class="slider__buttons-left-link">Пред.</a></div>
-              <div class="slider__buttons slider__buttons-right"><a href="#" class="slider__buttons-right-link">Пред.</a></div>
+              <div class="slider__button slider__button-left"><a href="#" class="slider__button-link">Пред.</a></div>
+              <div class="slider__button slider__button-right"><a href="#" class="slider__button-link">След.</a></div>
             </div>
           </div>
-          <section class="products">
-            <ul class="products__group">
-              <li class="products__group-item">
-                <h2 class="products__group-text">Популярные товары</h2>
-                <ul class="products__list clearfix">
-                  <li class="product">
-                    <div class="product__main-info">
-                      <div class="product__main-info-wrapper">
-                        <div class="product__img-wrapper"><img src="img/products/product1.jpg" alt="Apple Thunderb Display 27" class="product__img"></div>
-                        <div class="product__description"><a href="#" class="product__description-link">Apple Thunderb Display 27</a></div>
-                      </div>
-                      <table class="product__table">
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Артикул</td>
-                          <td class="product__table-cell">42787825</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Опция</td>
-                          <td class="product__table-cell">Включена</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Цвет</td>
-                          <td class="product__table-cell">серебристый</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Размер</td>
-                          <td class="product__table-cell">1280*1245*90</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Вес</td>
-                          <td class="product__table-cell">9 кг</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </li>
-                  <li class="product">
-                    <div class="product__main-info">
-                      <div class="product__main-info-wrapper">
-                        <div class="product__img-wrapper"><img src="img/products/product2.jpg" alt="iMac 27&quot;" class="product__img"></div>
-                        <div class="product__description"><a href="#" class="product__description-link">iMac 27&quot;</a></div>
-                      </div>
-                      <table class="product__table">
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Артикул</td>
-                          <td class="product__table-cell">42787825</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Опция</td>
-                          <td class="product__table-cell">Включена</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Цвет</td>
-                          <td class="product__table-cell">серебристый</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Размер</td>
-                          <td class="product__table-cell">1280*1245*90</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Вес</td>
-                          <td class="product__table-cell">9 кг</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </li>
-                  <li class="product">
-                    <div class="product__main-info">
-                      <div class="product__main-info-wrapper">
-                        <div class="product__img-wrapper"><img src="img/products/product3.jpg" alt="iPhone 5s Gold" class="product__img"></div>
-                        <div class="product__description"><a href="#" class="product__description-link">iPhone 5s Gold</a></div>
-                      </div>
-                      <table class="product__table">
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Артикул</td>
-                          <td class="product__table-cell">42787825</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Опция</td>
-                          <td class="product__table-cell">Включена</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Цвет</td>
-                          <td class="product__table-cell">серебристый</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Размер</td>
-                          <td class="product__table-cell">1280*1245*90</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Вес</td>
-                          <td class="product__table-cell">9 кг</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </li>
-                </ul>
+          <section class="catalog">
+            <h2 class="products__group-text">Популярные товары</h2>
+            <ul class="catalog__row">
+              <li class="catalog__row-product">
+                <div class="catalog__row-product-preview"><img src="img/products/product1.jpg" alt="Apple Thunderb Display 27"></div><a href="#" class="catalog__row-product-link">Apple Thunderb Display 27</a>
+                <table class="catalog__row-product-discription">
+                  <tr>
+                    <td>Артикул</td>
+                    <td>42787825</td>
+                  </tr>
+                  <tr>
+                    <td>Опция</td>
+                    <td>Включена</td>
+                  </tr>
+                  <tr>
+                    <td>Цвет</td>
+                    <td>серебристый</td>
+                  </tr>
+                  <tr>
+                    <td>Размер</td>
+                    <td>1280*1245*90</td>
+                  </tr>
+                  <tr>
+                    <td>Вес</td>
+                    <td>9 кг</td>
+                  </tr>
+                </table>
               </li>
-              <li class="products__group-item">
-                <h2 class="products__group-text">Товары со скидкой</h2>
-                <ul class="products__list clearfix">
-                  <li class="product">
-                    <div class="product__main-info">
-                      <div class="product__main-info-wrapper">
-                        <div class="product__img-wrapper"><img src="img/products/product4.jpg" alt="Apple Thunderb Display 27" class="product__img"></div>
-                        <div class="product__description"><a href="#" class="product__description-link">Apple Thunderb Display 27</a></div>
-                      </div>
-                      <table class="product__table">
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Артикул</td>
-                          <td class="product__table-cell">42787825</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Опция</td>
-                          <td class="product__table-cell">Включена</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Цвет</td>
-                          <td class="product__table-cell">серебристый</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Размер</td>
-                          <td class="product__table-cell">1280*1245*90</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Вес</td>
-                          <td class="product__table-cell">9 кг</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </li>
-                  <li class="product">
-                    <div class="product__main-info">
-                      <div class="product__main-info-wrapper">
-                        <div class="product__img-wrapper"><img src="img/products/product5.jpg" alt="iMac 27&quot;" class="product__img"></div>
-                        <div class="product__description"><a href="#" class="product__description-link">iMac 27&quot;</a></div>
-                      </div>
-                      <table class="product__table">
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Артикул</td>
-                          <td class="product__table-cell">42787825</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Опция</td>
-                          <td class="product__table-cell">Включена</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Цвет</td>
-                          <td class="product__table-cell">серебристый</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Размер</td>
-                          <td class="product__table-cell">1280*1245*90</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Вес</td>
-                          <td class="product__table-cell">9 кг</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </li>
-                  <li class="product">
-                    <div class="product__main-info">
-                      <div class="product__main-info-wrapper">
-                        <div class="product__img-wrapper"><img src="img/products/product6.jpg" alt="iPhone 5s Gold" class="product__img"></div>
-                        <div class="product__description"><a href="#" class="product__description-link">iPhone 5s Gold</a></div>
-                      </div>
-                      <table class="product__table">
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Артикул</td>
-                          <td class="product__table-cell">42787825</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Опция</td>
-                          <td class="product__table-cell">Включена</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Цвет</td>
-                          <td class="product__table-cell">серебристый</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Размер</td>
-                          <td class="product__table-cell">1280*1245*90</td>
-                        </tr>
-                        <tr class="product__table-row">
-                          <td class="product__table-cell">Вес</td>
-                          <td class="product__table-cell">9 кг</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </li>
+              <li class="catalog__row-product">
+                <div class="catalog__row-product-preview"><img src="img/products/product2.jpg" alt="iMac 27&quot;"></div><a href="#" class="catalog__row-product-link">iMac 27&quot;</a>
+                <table class="catalog__row-product-discription">
+                  <tr>
+                    <td>Артикул</td>
+                    <td>42787825</td>
+                  </tr>
+                  <tr>
+                    <td>Опция</td>
+                    <td>Включена</td>
+                  </tr>
+                  <tr>
+                    <td>Цвет</td>
+                    <td>серебристый</td>
+                  </tr>
+                  <tr>
+                    <td>Размер</td>
+                    <td>1280*1245*90</td>
+                  </tr>
+                  <tr>
+                    <td>Вес</td>
+                    <td>9 кг</td>
+                  </tr>
+                </table>
+              </li>
+              <li class="catalog__row-product">
+                <div class="catalog__row-product-preview"><img src="img/products/product3.jpg" alt="iPhone 5s Gold"></div><a href="#" class="catalog__row-product-link">iPhone 5s Gold</a>
+                <table class="catalog__row-product-discription">
+                  <tr>
+                    <td>Артикул</td>
+                    <td>42787825</td>
+                  </tr>
+                  <tr>
+                    <td>Опция</td>
+                    <td>Включена</td>
+                  </tr>
+                  <tr>
+                    <td>Цвет</td>
+                    <td>серебристый</td>
+                  </tr>
+                  <tr>
+                    <td>Размер</td>
+                    <td>1280*1245*90</td>
+                  </tr>
+                  <tr>
+                    <td>Вес</td>
+                    <td>9 кг</td>
+                  </tr>
+                </table>
+              </li>
+            </ul>
+            <h2 class="products__group-text">Товары со скидкой</h2>
+            <ul class="catalog__row">
+              <li class="catalog__row-product">
+                <div class="catalog__row-product-preview"><img src="img/products/product4.jpg" alt="Apple Thunderb Display 27"></div><a href="#" class="catalog__row-product-link">Apple Thunderb Display 27</a>
+                <table class="catalog__row-product-discription">
+                  <tr>
+                    <td>Артикул</td>
+                    <td>42787825</td>
+                  </tr>
+                  <tr>
+                    <td>Опция</td>
+                    <td>Включена</td>
+                  </tr>
+                  <tr>
+                    <td>Цвет</td>
+                    <td>серебристый</td>
+                  </tr>
+                  <tr>
+                    <td>Размер</td>
+                    <td>1280*1245*90</td>
+                  </tr>
+                  <tr>
+                    <td>Вес</td>
+                    <td>9 кг</td>
+                  </tr>
+                </table>
+              </li>
+              <li class="catalog__row-product">
+                <div class="catalog__row-product-preview"><img src="img/products/product5.jpg" alt="iMac 27&quot;"></div><a href="#" class="catalog__row-product-link">iMac 27&quot;</a>
+                <table class="catalog__row-product-discription">
+                  <tr>
+                    <td>Артикул</td>
+                    <td>42787825</td>
+                  </tr>
+                  <tr>
+                    <td>Опция</td>
+                    <td>Включена</td>
+                  </tr>
+                  <tr>
+                    <td>Цвет</td>
+                    <td>серебристый</td>
+                  </tr>
+                  <tr>
+                    <td>Размер</td>
+                    <td>1280*1245*90</td>
+                  </tr>
+                  <tr>
+                    <td>Вес</td>
+                    <td>9 кг</td>
+                  </tr>
+                </table>
+              </li>
+              <li class="catalog__row-product">
+                <div class="catalog__row-product-preview"><img src="img/products/product6.jpg" alt="iPhone 5s Gold"></div><a href="#" class="catalog__row-product-link">iPhone 5s Gold</a>
+                <table class="catalog__row-product-discription">
+                  <tr>
+                    <td>Артикул</td>
+                    <td>42787825</td>
+                  </tr>
+                  <tr>
+                    <td>Опция</td>
+                    <td>Включена</td>
+                  </tr>
+                  <tr>
+                    <td>Цвет</td>
+                    <td>серебристый</td>
+                  </tr>
+                  <tr>
+                    <td>Размер</td>
+                    <td>1280*1245*90</td>
+                  </tr>
+                  <tr>
+                    <td>Вес</td>
+                    <td>9 кг</td>
+                  </tr>
+                </table>
+              </li>
+            </ul>
+          </section>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__wrapper clearfix">
+        <a href="#" class="logo"><img src="img/logo2.png" alt="logo" class="footer__logo-img"><span class="hidden-text">ЭпплShop</span></a>
+        <div class="footer__links-wrapper clearfix">
+          <section class="footer__links">
+            <ul class="footer__links-ul">
+              <li class="footer__links-header">О магазине</li>
+              <li class="footer__links-link"><a href="#">О нас</a></li>
+              <li class="footer__links-link"><a href="#">Наши цены</a></li>
+              <li class="footer__links-link"><a href="#">Наши скидки</a></li>
+              <li class="footer__links-link"><a href="#">Акции</a></li>
+            </ul>
+            <ul class="footer__links-ul">
+              <li class="footer__links-header">Каталог</li>
+              <li class="footer__links-link"><a href="#">Смартфоны</a></li>
+              <li class="footer__links-link"><a href="#">Планшеты</a></li>
+              <li class="footer__links-link"><a href="#">Компьютеры</a></li>
+              <li class="footer__links-link"><a href="#">Аксессуары</a></li>
+            </ul>
+            <ul class="footer__links-ul">
+              <li class="footer__links-header">Контакты</li>
+              <li class="footer__links-link"><a href="#">Телефоны</a></li>
+              <li class="footer__links-link"><a href="#">Адреса</a></li>
+              <li class="footer__links-link"><a href="#">Карта проезда</a></li>
+              <li class="footer__links-link"><a href="#">Обратная связь</a></li>
+            </ul>
+            <ul class="footer__links-btns">
+              <li class="footer__socials-button stores">
+                <a href="#" class="sprite sprite-appstore"> <span class="hidden-text">Доступно в App Store</span></a>
+              </li>
+              <li class="footer__socials-button stores"><a href="#" class="sprite sprite-googelplay"><span class="hidden-text">Доступно в Google play</span></a></li>
+              <li class="clearboth">
+                <ul class="footer__socials-buttons">
+                  <li class="footer__socials-button vk">
+                    <a href="#" class="sprite sprite-vkontakte"> </a><span class="hidden-text">Мы в ВК</span></li>
+                  <li class="footer__socials-button fb">
+                    <a href="#" class="sprite sprite-facebook"> </a><span class="hidden-text">Мы в Facebook</span></li>
+                  <li class="footer__socials-button tw">
+                    <a href="#" class="sprite sprite-twitter"></a><span class="hidden-text">Мы в Twitter</span></li>
                 </ul>
               </li>
             </ul>
@@ -335,71 +354,19 @@
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <div class="container clearfix">
-        <div class="col-1-4">
-          <div class="footer__logo-wrapper">
-            <a href="#" class="footer__logo-link"><img src="img/logo2.png" alt="logo" class="logo-img"><span class="header-logo-text">ЭпплShop</span></a>
-          </div>
-        </div>
-        <div class="col-2-4">
-          <div class="footer-links__group-wrapper">
-            <ul class="footer-links__group">
-              <li class="footer-links__group-item">О магазине
-                <ul class="footer-links">
-                  <li class="footer-links__item"> <a href="#" class="product__description-link">О нас</a></li>
-                  <li class="footer-links__item"><a href="#" class="product__description-link">Наши цены</a></li>
-                  <li class="footer-links__item"><a href="#" class="product__description-link">Наши скидки</a></li>
-                  <li class="footer-links__item"><a href="#" class="product__description-link">Акции</a></li>
-                </ul>
-              </li>
-              <li class="footer-links__group-item">Каталог
-                <ul class="footer-links">
-                  <li class="footer-links__item"> <a href="#" class="product__description-link">Смартфоны</a></li>
-                  <li class="footer-links__item"><a href="#" class="product__description-link">Планшеты</a></li>
-                  <li class="footer-links__item"><a href="#" class="product__description-link">Компьютеры</a></li>
-                  <li class="footer-links__item"><a href="#" class="product__description-link">Аксессуары</a></li>
-                </ul>
-              </li>
-              <li class="footer-links__group-item">Контакты
-                <ul class="footer-links">
-                  <li class="footer-links__item"> <a href="#" class="product__description-link">Телефоны</a></li>
-                  <li class="footer-links__item"><a href="#" class="product__description-link">Адреса</a></li>
-                  <li class="footer-links__item"><a href="#" class="product__description-link">Карта проезда</a></li>
-                  <li class="footer-links__item"><a href="#" class="product__description-link">Обратная связь</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-1-4">
-          <div class="footer__icons-wrapper">
-            <div class="footer__apps-wrapper">
-              <ul class="footer__apps">
-                <li class="footer__apps-item"><a href="#" class="footer__apps-link"><span class="footer__apps-text">Доступно в App Store</span></a></li>
-                <li class="footer__apps-item"><a href="#" class="footer__apps-link"><span class="footer__apps-text">Доступно в Google Play</span></a></li>
-              </ul>
-            </div>
-            <div class="footer__socials-wrapper">
-              <ul class="footer__socials">
-                <li class="footer__socials-item"><a href="#" class="footer__socials-link icon-vk"><span class="footer__socials-text">В контакте</span></a></li>
-                <li class="footer__socials-item"><a href="#" class="footer__socials-link icon-vk"><span class="footer__socials-text">Фейсбук</span></a></li>
-                <li class="footer__socials-item"><a href="#" class="footer__socials-link icon-vk"><span class="footer__socials-text">Твиттер</span></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
     <!-- build:js js/vendor.js -->
     <!--bower:js-->
-    <script src="/bower/jquery/dist/jquery.js"></script>
-    <script src="/bower/jquery-placeholder/jquery.placeholder.js"></script>
+    <script src="../../bower/jquery/dist/jquery.js"></script>
+    <script src="../../bower/modernizr/modernizr.js"></script>
+    <script src="../../bower/placeholders/dist/placeholders.js"></script>
+    <script src="../../bower/qtip2/jquery.qtip.js"></script>
+    <script src="../../bower/bpopup/jquery.bpopup.js"></script>
     <!--endbower  -->
     <!-- endbuild -->
     <!-- build:js js/main.js -->
     <script src="js/main.js"></script>
     <!-- endbuild -->
+    </div>
   </body>
 
 </html>

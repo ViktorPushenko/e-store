@@ -1,27 +1,29 @@
 form.form.callMeForm#callMe(role="form")
+	span.form-header-text Заказать звонок
 	//- Имя
-	.form-group
+	.form-group.clearfix
 		label.label(for="callMeName") Ваше имя
-		input.input#callMeName(type="text", name="callMeName", placeholder="Введите Ваше имя", qtip-content="Укажите имя")
+		input.input#callMeName(type="text", name="callMeName", placeholder="Константин", qtip-content="Укажите имя")
 	//- Пароль
-	.form-group
+	.form-group.clearfix
 		label.label(for="callMePhone") Телефон
-		input.input#callMePhone(type="text", name="callMePhone", placeholder="Введите телефон", qtip-content="Укажите номер телефон")
+		input.input#callMePhone(type="text", name="callMePhone", placeholder="+38 (067) 123-45-67", qtip-content="Укажите номер телефон")
 	//- Дата звонка
-	.form-group
+	.form-group.clearfix
 		label.label(for="callMeDay") Дата звонка
 		
-		- var day = 0
-		select(size='1', qtip-position='left').select
-			while day < 31
-				option(value=day++) #{day}
-		- var month = 0
-		select(size='1', qtip-position='right').select
-			while month < 12
-				option(value=month++) #{month}
-	.form-group
-		textarea.textarea#callMeComments(name="callMeComments", rows='4')
-	.form-group
-		button.btn.btn-main(type="submit") Отправить
-		button.btn.btn-main(type="reset") Очистить
+		div.right
+			- var day = 0
+			select(size='1', qtip-position='left').select
+				while day < 31
+					option(value=day++) #{day}
+			- var month = 0
+			select(size='1', qtip-position='right').select
+				while month < 12
+					option(value=month++) #{month}
+	.form-group.clearfix
+		textarea.textarea.callMeComments(name="callMeComments", rows='3',  placeholder="Комментарий")
+	.form-group.clearfix.no-margin-bottom
+		button.btn.btn-main.left(type="submit") Отправить
+		button.btn.right(type="reset") Очистить
 

@@ -1,24 +1,23 @@
 mixin product(description, img, data1, data2, data3, data4, data5)
-    li.product
-        div.product__main-info
-            div.product__main-info-wrapper
-                div.product__img-wrapper
-                    img.product__img(src='img/products/' + img alt=description)
-                div.product__description
-                    a.product__description-link(href="#") #{description}
-            table.product__table
-                tr.product__table-row
-                    td.product__table-cell Артикул
-                    td.product__table-cell #{data1}
-                tr.product__table-row
-                    td.product__table-cell Опция
-                    td.product__table-cell #{data2}
-                tr.product__table-row
-                    td.product__table-cell Цвет
-                    td.product__table-cell #{data3}
-                tr.product__table-row
-                    td.product__table-cell Размер
-                    td.product__table-cell #{data4}
-                tr.product__table-row
-                    td.product__table-cell Вес
-                    td.product__table-cell #{data5}
+    li.catalog__row-product
+        .catalog__row-product-preview
+            img(src='img/products/' + img alt=description)
+        a.catalog__row-product-link(href="#") #{description}
+        table.catalog__row-product-discription
+            tr
+                td Артикул
+                td #{data1}
+            tr
+                td Опция
+                td #{data2}
+            tr
+                td Цвет
+                td #{data3}
+            tr
+                td Размер
+                td #{data4}
+            tr
+                td Вес
+                td #{data5}
+            
+                

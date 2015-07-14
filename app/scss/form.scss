@@ -1,0 +1,109 @@
+.callMeForm {
+	position: relative;
+	display: block;
+	background-color: #f4f6f9;
+	padding: 10px 10px 9px 9px;
+	font-size: 14px;
+  	font-family: elektra_light_proregular;
+  	color: #5c7b98;
+  	margin-bottom: 21px;
+}
+
+.form-header-text {
+  font-size: 25px;
+  font-family: elektra_light_probold;
+  color: #829ab1;
+  font-weight: bold;
+  padding-left: 2px;
+  margin-bottom: 17px;
+  display: block;
+}
+
+.form-group {
+	display: block;
+	clear: both;
+	position: relative;
+	margin-bottom: 13px;
+}
+
+.no-margin-bottom {
+	margin-bottom: 0;
+}
+
+
+.label {
+  line-height: 28px;
+  display: block;
+  float: left;
+  margin-right: 2px;
+  padding-left: 1px;
+}
+
+.input {
+	border: 1px solid #dae1eb;
+	height: 22px;
+	display: block;
+	float: right;
+	line-height: 25px;
+	width: 125px;
+	padding-left: 7px;
+	margin-right: 1px;
+}
+
+.select {
+	border: 1px solid #dae1eb;
+	height: 25px;
+	width: 50px;
+}
+
+.callMeComments {
+	display: block;
+	position: relative;
+	width: 198px;
+	resize: none;
+  	border: 1px solid #dae1eb;
+  	padding-left: 7px;
+  	line-height: 25px;
+  	height: 63px;
+  	margin-bottom: 2px;
+
+}
+
+.btn {
+	width: 90px;
+	height: 35px;
+	border: none;
+	font-size: 15px;
+	font-family: elektra_light_probold;
+	color: #ffffff;
+	background-color: #dae1eb;
+}
+
+.btn-main {
+	background-color: #00b9fe;
+}
+
+
+/* placeholder */
+$color: #dae1eb;
+$size: 11px;
+
+/* placeholder */
+*::-webkit-input-placeholder { color: $color;  font-size: $size; }
+*:-moz-placeholder { color: $color;  font-size: $size; }
+*::-moz-placeholder { color: $color;  font-size: $size; }
+*:-ms-input-placeholder { color: $color;  font-size: $size; }
+
+/* $placeholder-color: #dae1eb;
+$placeholder-size: 12px;
+@mixin placeholder_mixin($color, $size) {
+  -webkit-input-placeholder: { color: $color;  font-size: $size; }};
+     -moz-placeholder: $radius;
+      -ms-input-placeholder: $radius;
+          placeholder: $radius;
+}
+
+.box { @include border-radius(10px); }
+ */
+
+

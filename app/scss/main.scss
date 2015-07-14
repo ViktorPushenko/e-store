@@ -1,0 +1,73 @@
+@import 'variables.scss';
+
+body, html {
+  font-family: elektra_light_proregular,sans-serif;
+  height: 100%!important;
+  min-width: 100%;
+  color: $main-font-color;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin:  0;
+}
+
+figure {
+  margin: 0;
+}
+
+.wrapper {
+  min-width: 1190px;
+  min-height: 100%!important;
+  height: 100%;
+}
+
+.content-wrapper {
+    position: relative;
+    display: block;
+    max-width: 1000px;
+    width: 1000px;
+    min-height: 100%;
+    height: auto!important;
+    margin: 0 auto;
+    padding: 38px 5px 0;
+    border: 1px red solid;
+
+    &:after {
+        display: block;
+        /* height: $footer-height; */
+        content: '';
+    }
+}
+
+.container {
+  display: block;
+}
+
+.right-content {
+    width: 740px;
+}
+
+
+.header-logo-link {
+	display: block;
+	margin-bottom: 21px;
+}
+
+.sidebar {
+  width: 230px;
+  margin-right: 5px;
+}
+
+
+
+
+@import 'form.scss';
+@import 'miniPics.scss';
+@import 'contacts.scss';
+@import 'slider.scss';
+@import 'products.scss';
+@import 'sprite.scss';
+@import 'footer.scss';

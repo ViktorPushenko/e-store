@@ -6,22 +6,11 @@ html(lang="ru-RU")
     <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его.</p>
     <![endif]-->
     .wrapper
-      .main-content
-        //- Шапка
-        include ../common/header.jade
-        .container  
-        include ../common/sidebar.jade
-        .variable-content
-          block content
-
-          //- Левые блоки
-          //- aside.sidebar
-            //- Навигация
-            //- include ../common/navigate.jade
-            //- Контакты
-            //- include ../common/contacts.jade      
-          //- Изменяемый контент
-          //- .variable-content
-            //- Изменяемая часть каждой страницы
-            block content
-    include ../common/footer.jade  
+        .content-wrapper.clearfix
+            //- Шапка
+            include ../common/header.jade
+            //- .container  
+            include ../common/sidebar.jade
+            .container.right.right-content
+                block content
+        include ../common/footer.jade  

@@ -1,0 +1,20 @@
+.hidden-text {
+  position: absolute;
+  left: -9999px; }
+
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearboth {
+  clear: both; }

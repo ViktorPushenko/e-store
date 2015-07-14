@@ -1,60 +1,119 @@
-footer.footer
-	.container.clearfix
-		div.col-1-4
-			div.footer__logo-wrapper
-				a.footer__logo-link(href="#")
-					img.logo-img(src="img/logo2.png", alt="logo")
-					span.header-logo-text ЭпплShop
-		div.col-2-4
-			div.footer-links__group-wrapper
-				ul.footer-links__group
-					mixin footer-links__group(group_name, link1, link2, link3, link4)
-						li.footer-links__group-item #{group_name}
-							ul.footer-links
-								li.footer-links__item 
-									a.product__description-link(href="#") #{link1}
-								li.footer-links__item
-									a.product__description-link(href="#") #{link2}
-								li.footer-links__item
-									a.product__description-link(href="#") #{link3}
-								li.footer-links__item
-									a.product__description-link(href="#") #{link4}
-					+footer-links__group('О магазине', 'О нас', 'Наши цены', 'Наши скидки', 'Акции')
-					+footer-links__group('Каталог', 'Смартфоны', 'Планшеты', 'Компьютеры', 'Аксессуары')
-					+footer-links__group('Контакты', 'Телефоны', 'Адреса', 'Карта проезда', 'Обратная связь')
-		div.col-1-4
-			div.footer__icons-wrapper
-				div.footer__apps-wrapper
-					ul.footer__apps
-						li.footer__apps-item
-							a.footer__apps-link(href="#")
-								span.footer__apps-text Доступно в App Store
-						li.footer__apps-item
-							a.footer__apps-link(href="#")
-								span.footer__apps-text Доступно в Google Play
-				div.footer__socials-wrapper
-					ul.footer__socials
-						li.footer__socials-item
-							a.footer__socials-link.icon-vk(href="#")
-								span.footer__socials-text В контакте
-						li.footer__socials-item
-							a.footer__socials-link.icon-vk(href="#")
-								span.footer__socials-text Фейсбук
-						li.footer__socials-item
-							a.footer__socials-link.icon-vk(href="#")
-								span.footer__socials-text Твиттер
 
+//- footer.footer.clearfix
 
+//- 	.content-wrapper.columns.clearfix
+		
+
+//- 		.col-1-4
+//- 			.footer__logo-wrapper
+//- 				a.footer__logo-link(href="#")
+//- 					img.logo-img(src="img/logo2.png", alt="logo")
+//- 					span.header-logo-text ЭпплShop
+//- 		.col-2-4
+//- 			.footer-links__group-wrapper
+//- 				ul.footer-links__group
+//- 					mixin footer-links__group(group_name, link1, link2, link3, link4)
+//- 						li.footer-links__group-item #{group_name}
+//- 							ul.footer-links
+//- 								li.footer-links__item 
+//- 									a.product__description-link(href="#") #{link1}
+//- 								li.footer-links__item
+//- 									a.product__description-link(href="#") #{link2}
+//- 								li.footer-links__item
+//- 									a.product__description-link(href="#") #{link3}
+//- 								li.footer-links__item
+//- 									a.product__description-link(href="#") #{link4}
+//- 					+footer-links__group('О магазине', 'О нас', 'Наши цены', 'Наши скидки', 'Акции')
+//- 					+footer-links__group('Каталог', 'Смартфоны', 'Планшеты', 'Компьютеры', 'Аксессуары')
+//- 					+footer-links__group('Контакты', 'Телефоны', 'Адреса', 'Карта проезда', 'Обратная связь')
+//- 		.col-1-4
+//- 			.footer__icons-wrapper
+//- 				.footer__apps-wrapper
+//- 					ul.footer__apps
+//- 						li.footer__apps-item
+//- 							a.footer__apps-link(href="#")
+//- 								span.footer__apps-text Доступно в App Store
+//- 						li.footer__apps-item
+//- 							a.footer__apps-link(href="#")
+//- 								span.footer__apps-text Доступно в Google Play
+//- 				.footer__socials-wrapper
+//- 					ul.footer__socials
+//- 						li.footer__socials-item
+//- 							a.footer__socials-link.icon-vk(href="#")
+//- 								span.footer__socials-text В контакте
+//- 						li.footer__socials-item
+//- 							a.footer__socials-link.icon-vk(href="#")
+//- 								span.footer__socials-text Фейсбук
+//- 						li.footer__socials-item
+//- 							a.footer__socials-link.icon-vk(href="#")
+//- 								span.footer__socials-text Твиттер
+
+.footer
+	.footer__wrapper.clearfix
+		a.logo(href="#")
+			img.footer__logo-img(src="img/logo2.png" alt="logo")
+			span.hidden-text ЭпплShop
+
+		.footer__links-wrapper.clearfix
+			section.footer__links
+
+				mixin footer__links-ul(head, l1, h1, l2, h2, l3, h3, l4, h4)
+					ul.footer__links-ul
+						li.footer__links-header= head
+						li.footer__links-link
+							a(href=h1)= l1
+						li.footer__links-link
+							a(href=h2)= l2
+						li.footer__links-link
+							a(href=h3)= l3
+						li.footer__links-link
+							a(href=h4)= l4
+		
+				+footer__links-ul("О магазине", "О нас", "#", "Наши цены", "#", "Наши скидки", "#", "Акции", "#")
+				+footer__links-ul("Каталог", "Смартфоны", "#", "Планшеты", "#", "Компьютеры", "#", "Аксессуары", "#")
+				+footer__links-ul("Контакты", "Телефоны", "#", "Адреса", "#", "Карта проезда", "#", "Обратная связь", "#")
+
+				//- ul.footer__links-ul
+				//- 	li.footer__socials-button.as
+				//- 	li.footer__links-link
+				//- 		a.sprite.sprite-appstore(href="#") Доступно в App Store
+				//- 	li.footer__socials-button.gp
+				//- 		a.sprite.sprite-googelplay(href="#") Доступно в Google play
+				//- 	li.footer__socials-button.vk
+				//- 		a.sprite.sprite-vkontakte(href="#") Мы в ВК
+				//- 	li.footer__socials-button.fb
+				//- 		a.sprite.sprite-facebook(href="#") Мы в Facebook
+				//- 	li.footer__socials-button.tw
+				//- 		a.sprite.sprite-twitter(href="#") Мы в Twitter		
+				//- secton.footer__socials.clearfix
 			
+				ul.footer__links-btns
+					li.footer__socials-button.stores
+						a.sprite.sprite-appstore(href="#") 
+							span.hidden-text Доступно в App Store
+					li.footer__socials-button.stores
+						a.sprite.sprite-googelplay(href="#")
+							span.hidden-text Доступно в Google play
+					li.clearboth
+						ul.footer__socials-buttons
+							li.footer__socials-button.vk
+								a.sprite.sprite-vkontakte(href="#") 
+								span.hidden-text Мы в ВК
+							li.footer__socials-button.fb
+								a.sprite.sprite-facebook(href="#") 
+								span.hidden-text Мы в Facebook
+							li.footer__socials-button.tw
+								a.sprite.sprite-twitter(href="#")
+								span.hidden-text Мы в Twitter
 
 
 <!-- build:js js/vendor.js --> 
 //bower:js
-script(src='/bower/jquery/dist/jquery.js')
-//- script(src='/bower/qtip2/jquery.qtip.js')
-//- script(src='/bower/bpopup/jquery.bpopup.js')
-script(src='/bower/jquery-placeholder/jquery.placeholder.js')
-
+script(src='../../bower/jquery/dist/jquery.js')
+script(src='../../bower/modernizr/modernizr.js')
+script(src='../../bower/placeholders/dist/placeholders.js')
+script(src='../../bower/qtip2/jquery.qtip.js')
+script(src='../../bower/bpopup/jquery.bpopup.js')
 //endbower  
 <!-- endbuild --> 
 
@@ -65,4 +124,5 @@ script(src='/bower/jquery-placeholder/jquery.placeholder.js')
 //- script(src="js/contact_me.js")
 //- script(src="js/plugins.js")
 script(src="js/main.js")
+
 <!-- endbuild --> 

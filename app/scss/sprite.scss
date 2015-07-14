@@ -1,0 +1,37 @@
+/* С П Р А Й Т */
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+    
+}
+
+.sprite-appstore {
+    width: 90px;
+    height: 32px;
+    background-position: -10px -10px;
+}
+
+.sprite-facebook {
+    width: 32px;
+    height: 32px;
+    background-position: -10px -62px;
+}
+
+.sprite-googelplay {
+    width: 90px;
+    height: 32px;
+    background-position: -120px -10px;
+}
+
+.sprite-twitter {
+    width: 32px;
+    height: 32px;
+    background-position: -62px -62px;
+}
+
+.sprite-vkontakte {
+    width: 32px;
+    height: 32px;
+    background-position: -114px -62px;
+}

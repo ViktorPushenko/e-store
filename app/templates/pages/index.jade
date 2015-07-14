@@ -5,18 +5,16 @@ block title
 
 block content
   include ../common/slider.jade
-  section.products
-    ul.products__group
-        li.products__group-item
-            h2.products__group-text Популярные товары
-            ul.products__list.clearfix
-                include ../common/product-list.jade
-                +product('Apple Thunderb Display 27',   'product1.jpg','42787825','Включена','серебристый','1280*1245*90','9 кг')
-                +product('iMac 27"',                    'product2.jpg','42787825','Включена','серебристый','1280*1245*90','9 кг')
-                +product('iPhone 5s Gold',              'product3.jpg','42787825','Включена','серебристый','1280*1245*90','9 кг')
-        li.products__group-item
-            h2.products__group-text Товары со скидкой
-            ul.products__list.clearfix
-                +product('Apple Thunderb Display 27',   'product4.jpg','42787825','Включена','серебристый','1280*1245*90','9 кг')
-                +product('iMac 27"',                    'product5.jpg','42787825','Включена','серебристый','1280*1245*90','9 кг')
-                +product('iPhone 5s Gold',              'product6.jpg','42787825','Включена','серебристый','1280*1245*90','9 кг')
+  section.catalog
+        h2.products__group-text Популярные товары
+        ul.catalog__row
+            include ../common/product-list.jade
+            +product('Apple Thunderb Display 27',   'product1.jpg','42787825','Включена','серебристый','1280*1245*90','9 кг')
+            +product('iMac 27"',                    'product2.jpg','42787825','Включена','серебристый','1280*1245*90','9 кг')
+            +product('iPhone 5s Gold',              'product3.jpg','42787825','Включена','серебристый','1280*1245*90','9 кг')
+    
+        h2.products__group-text Товары со скидкой
+        ul.catalog__row
+            +product('Apple Thunderb Display 27',   'product4.jpg','42787825','Включена','серебристый','1280*1245*90','9 кг')
+            +product('iMac 27"',                    'product5.jpg','42787825','Включена','серебристый','1280*1245*90','9 кг')
+            +product('iPhone 5s Gold',              'product6.jpg','42787825','Включена','серебристый','1280*1245*90','9 кг')

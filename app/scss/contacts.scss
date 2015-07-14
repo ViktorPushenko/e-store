@@ -1,0 +1,49 @@
+@import 'variables.scss';
+/* .address {
+	display: block;
+	position: relative;
+	height: 105px;
+	background-color: #f4f6f9;
+	padding-top: 20px;
+	padding-left: 44px;
+	font-size: 14px;
+	
+}
+
+.address-text {
+	padding-bottom: 22px;
+} */
+
+.sidebar__address {
+    font-family: $font_elr;
+    font-size: 14px;
+    font-style: normal;
+    margin-bottom: 20px;
+    padding: 15px 0 5px 0;
+    background-color: $box-bg;
+    color: $main-font-color;
+    &-header {
+        font-size: 14px;
+        font-weight: normal;
+        width: 165px;
+        margin: 0 0 15px 0;
+        padding: 0 5px 0 40px;
+        
+        background: transparent url('../img/point.png') no-repeat 20px 0;
+    }
+    &-ul {
+        margin: 0 0 15px 35px;
+        list-style: none;
+        a {
+            font-size: 14px;
+            line-height: 22px;
+            display: block;
+            height: 22px;
+            padding: 0 5px 0 20px;
+            vertical-align: middle;
+            text-decoration: none;
+            color: $main-font-color;
+            background: transparent url('../img/tel.png') no-repeat 0 50%;
+        }
+    }
+}

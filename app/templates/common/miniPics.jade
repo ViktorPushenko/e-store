@@ -1,8 +1,10 @@
 .miniPics
-	- var picNo = 0
-		while picNo < 9
-			- picNo++
-			a.miniPics__item
-				img.miniPics__item-Pic(src='img/mini-pics/mini-pic-' + picNo + '.jpg', alt='cool mini pic #' + picNo)
-				span.miniPics__item-text cool mini pic ##{picNo}
+	ul.miniPics-list
+		- var picNo = 0
+			while picNo < 9
+				- picNo++
+				li.miniPics__item
+					a.miniPics__item-link(href="#")
+						img.miniPics__item-Pic(src='img/mini-pics/mini-pic-' + picNo + '.jpg', alt='cool mini pic #' + picNo)
+						span.hidden-text cool mini pic ##{picNo}
 	

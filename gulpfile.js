@@ -39,7 +39,7 @@ gulp.task('wiredep', function() {
 
 // ============ Server start ====================
 // 
-gulp.task('server', ['jade'], function() {
+gulp.task('server', ['jade', 'scss'], function() {
 	browserSync({
 		notyfy: false,
 		port: 9000,
@@ -58,7 +58,7 @@ gulp.task('server', ['jade'], function() {
 // 
 gulp.task('watch', function() {
 	gulp.watch('app/templates/**/*.jade', ['jade']);
-	gulp.watch('app/scss/**/*.scss', ['scss']);
+	gulp.watch('app/scss/*.scss', ['scss']);
 	gulp.watch('bower.json', ['wiredep']);
 	gulp.watch([
 		'app/js/**/*.js',
@@ -89,10 +89,10 @@ gulp.task('jade', function() {
 // ============ SCSS TO CSS compile ====================
 // 
 gulp.task('scss', function () {
-  gulp.src('app/scss/**/*.scss')
-    .pipe(sass.sync().on('error', log))
-    .pipe(gulp.dest('./css'))
-    .pipe(reload({stream: true}));;
+  	gulp.src('app/scss/*.scss')
+    	.pipe(scss.sync().on('error', log))
+    	.pipe(gulp.dest('app/css'))
+    	.pipe(reload({stream: true}));
 });
 
 // ======================================================
@@ -141,8 +141,8 @@ gulp.task('images', function() {
 // ============ Rest files moving to Dist folder ========
 // 
 gulp.task('extras', function() {
-	return gulp.src([
-		'app/*.*', '!app/*html'])
+	gulp.src([
+		'app/*.*', 'app/*', 'app/.*' , '!app/*html'])
 		.pipe(gulp.dest('dist'));
 });
 
@@ -176,4 +176,4 @@ var log = function(error) {
 	''
 	].join('\n'));
 	this.end();
-}
+};

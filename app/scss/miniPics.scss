@@ -1,0 +1,18 @@
+.miniPics {
+	margin-right: -10px;
+	margin-bottom: 30px;
+}
+.miniPics__item {
+	display: inline-block;
+	margin: 0 6px 10px 0;
+	width: 70px;
+	height: 70px;
+}
+
+.miniPics-list {
+	list-style: none;
+	padding: 0;
+}
+.miniPics__item-Pic {
+	max-width: 100%;
+}
