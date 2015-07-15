@@ -45,6 +45,8 @@ background: blue;
     position: relative;
     z-index: 5;
     color: #fff;
+    background: #613993 url('../img/background.png') 0 0 repeat;
+    /* padding-top: 15px; */
     /* background-color: red; */
     
     &__wrapper {
@@ -52,9 +54,9 @@ background: blue;
         min-width: 975px;
         max-width: 1000px;
         margin: 0 auto;
-        border: 1px blue solid;
+        /* border: 1px blue solid; */
         height: $footer-height;
-        background: #613993 url('../img/background.png') 0 0 repeat;
+        /* background: #613993 url('../img/background.png') 0 0 repeat; */
         & > * {
             display: inline-block;
             vertical-align: top;
@@ -63,9 +65,9 @@ background: blue;
     &__logo-img {
         display: block;
         position: absolute;
-        width: 230px;
+        width: 140px;
         position: relative;
-        padding-top: 99px;
+        padding-top: 106px;
         
 
         /*   img {
@@ -95,26 +97,27 @@ background: blue;
             position: relative;
             float: right;
             width: 740px;
-            padding: 60px 0 5px 0;
-            border: 1px yellow solid;
+            padding: 65px 0 5px 0;
+            /* border: 1px yellow solid; */
         }
         &-ul {
             font-size: 15px;
             display: inline-block;
             /* margin: 0 70px 0 0; */
             padding: 0;
-            width: 162px;
+            width: 157px;
             list-style: none;
-            border: 1px green solid;
+            padding-right: 0px;
+            /* border: 1px green solid; */
         }
         &-btns {
             display: inline-block;
             vertical-align: top;
             padding: 0;
             padding-top: 12px;
-            width: 217px;
+            width: 250px;
             list-style: none;
-            border: 1px green solid;
+            /* border: 1px green solid; */
         }
         &-header {
             max-width: 100px;
@@ -140,8 +143,11 @@ background: blue;
     }
     &__socials {
         position: relative;
+
+        padding-right: 5px;
+
         /* float: right; */
-        right:0;
+        /* right:-5px; */
         &-buttons {
             font-size: 0;
             width: 217px;
@@ -151,7 +157,7 @@ background: blue;
         }
         &-button {
             display: inline-block;
-            margin-right: 16px;
+            margin-left: 6px;
             &:last-child {
                 margin-right: 0;
             }

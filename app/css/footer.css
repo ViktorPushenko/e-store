@@ -1,3 +1,8 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
 .hidden-text {
   position: absolute;
   left: -9999px; }
@@ -18,6 +23,10 @@
 
 .clearboth {
   clear: both; }
+
+.inline-block {
+  display: inline-block;
+  position: relative; }
 
 /* 
 .column-1 {
@@ -64,24 +73,26 @@ background: blue;
   position: relative;
   z-index: 5;
   color: #fff;
+  background: #613993 url("../img/background.png") 0 0 repeat;
+  /* padding-top: 15px; */
   /* background-color: red; */ }
   .footer__wrapper {
     position: relative;
     min-width: 975px;
     max-width: 1000px;
     margin: 0 auto;
-    border: 1px blue solid;
+    /* border: 1px blue solid; */
     height: 240px;
-    background: #613993 url("../img/background.png") 0 0 repeat; }
+    /* background: #613993 url('../img/background.png') 0 0 repeat; */ }
     .footer__wrapper > * {
       display: inline-block;
       vertical-align: top; }
   .footer__logo-img {
     display: block;
     position: absolute;
-    width: 230px;
+    width: 140px;
     position: relative;
-    padding-top: 99px;
+    padding-top: 106px;
     /*   img {
             display: block;
             position: absolute;
@@ -108,24 +119,25 @@ background: blue;
       position: relative;
       float: right;
       width: 740px;
-      padding: 60px 0 5px 0;
-      border: 1px yellow solid; }
+      padding: 65px 0 5px 0;
+      /* border: 1px yellow solid; */ }
     .footer__links-ul {
       font-size: 15px;
       display: inline-block;
       /* margin: 0 70px 0 0; */
       padding: 0;
-      width: 162px;
+      width: 157px;
       list-style: none;
-      border: 1px green solid; }
+      padding-right: 0px;
+      /* border: 1px green solid; */ }
     .footer__links-btns {
       display: inline-block;
       vertical-align: top;
       padding: 0;
       padding-top: 12px;
-      width: 217px;
+      width: 250px;
       list-style: none;
-      border: 1px green solid; }
+      /* border: 1px green solid; */ }
     .footer__links-header {
       max-width: 100px;
       font-family: "elektra_light_probold";
@@ -144,8 +156,9 @@ background: blue;
     display: inline-block; }
   .footer__socials {
     position: relative;
+    padding-right: 5px;
     /* float: right; */
-    right: 0; }
+    /* right:-5px; */ }
     .footer__socials-buttons {
       font-size: 0;
       width: 217px;
@@ -153,7 +166,7 @@ background: blue;
       list-style: none; }
     .footer__socials-button {
       display: inline-block;
-      margin-right: 16px; }
+      margin-left: 6px; }
       .footer__socials-button:last-child {
         margin-right: 0; }
     .footer__socials .as {

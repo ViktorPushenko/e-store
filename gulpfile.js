@@ -59,6 +59,7 @@ gulp.task('server', ['jade', 'scss'], function() {
 gulp.task('watch', function() {
 	gulp.watch('app/templates/**/*.jade', ['jade']);
 	gulp.watch('app/scss/*.scss', ['scss']);
+	gulp.watch('app/img/**/*.*', ['images']);
 	gulp.watch('bower.json', ['wiredep']);
 	gulp.watch([
 		'app/js/**/*.js',

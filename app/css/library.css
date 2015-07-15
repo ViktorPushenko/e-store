@@ -1,3 +1,8 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
 .hidden-text {
   position: absolute;
   left: -9999px; }
@@ -18,3 +23,7 @@
 
 .clearboth {
   clear: both; }
+
+.inline-block {
+  display: inline-block;
+  position: relative; }
