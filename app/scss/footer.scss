@@ -110,13 +110,21 @@ background: blue;
             padding-right: 0px;
             /* border: 1px green solid; */
         }
+        &-buttons_row {
+            margin-bottom: 24px;
+        }
+        &-socials-button {
+            margin-right: 9px;
+        }
         &-btns {
             display: inline-block;
             vertical-align: top;
             padding: 0;
             padding-top: 12px;
-            width: 250px;
+            padding-left: 68px;
+            width: 185px;
             list-style: none;
+
             /* border: 1px green solid; */
         }
         &-header {
@@ -137,7 +145,7 @@ background: blue;
             }
         }
     }
-    &stores {
+/*     &stores {
         position: relative;
         display: inline-block;
     }
@@ -146,8 +154,6 @@ background: blue;
 
         padding-right: 5px;
 
-        /* float: right; */
-        /* right:-5px; */
         &-buttons {
             font-size: 0;
             width: 217px;
@@ -170,6 +176,6 @@ background: blue;
             margin-right: 0;
             margin-bottom: 27px;
         }
-    }
+    } */
 }
 

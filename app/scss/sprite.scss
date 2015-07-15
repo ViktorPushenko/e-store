@@ -3,35 +3,34 @@
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     display: block;
-    
+}
+
+.sprite-googleplay {
+    width: 90px;
+    height: 32px;
+    background-position: -5px -5px;
 }
 
 .sprite-appstore {
     width: 90px;
     height: 32px;
-    background-position: -10px -10px;
+    background-position: -5px -47px;
 }
 
-.sprite-facebook {
-    width: 36px;
-    height: 36px;
-    background-position: -10px -62px;
+.sprite-fb {
+    width: 39px;
+    height: 39px;
+    background-position: -105px -5px;
 }
 
-.sprite-googelplay {
-    width: 90px;
-    height: 32px;
-    background-position: -120px -10px;
+.sprite-tw {
+    width: 39px;
+    height: 39px;
+    background-position: -105px -54px;
 }
 
-.sprite-twitter {
-    width: 36px;
-    height: 36px;
-    background-position: -62px -62px;
-}
-
-.sprite-vkontakte {
-    width: 36px;
-    height: 36px;
-    background-position: -114px -62px;
+.sprite-vk {
+    width: 39px;
+    height: 39px;
+    background-position: -5px -103px;
 }

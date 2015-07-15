@@ -545,30 +545,30 @@ $placeholder-size: 12px;
   background-repeat: no-repeat;
   display: block; }
 
+.sprite-googleplay {
+  width: 90px;
+  height: 32px;
+  background-position: -5px -5px; }
+
 .sprite-appstore {
   width: 90px;
   height: 32px;
-  background-position: -10px -10px; }
+  background-position: -5px -47px; }
 
-.sprite-facebook {
-  width: 36px;
-  height: 36px;
-  background-position: -10px -62px; }
+.sprite-fb {
+  width: 39px;
+  height: 39px;
+  background-position: -105px -5px; }
 
-.sprite-googelplay {
-  width: 90px;
-  height: 32px;
-  background-position: -120px -10px; }
+.sprite-tw {
+  width: 39px;
+  height: 39px;
+  background-position: -105px -54px; }
 
-.sprite-twitter {
-  width: 36px;
-  height: 36px;
-  background-position: -62px -62px; }
-
-.sprite-vkontakte {
-  width: 36px;
-  height: 36px;
-  background-position: -114px -62px; }
+.sprite-vk {
+  width: 39px;
+  height: 39px;
+  background-position: -5px -103px; }
 
 ul {
   list-style: none;
@@ -647,7 +647,39 @@ background: blue;
   color: #fff;
   background: #613993 url("../img/background.png") 0 0 repeat;
   /* padding-top: 15px; */
-  /* background-color: red; */ }
+  /* background-color: red; */
+  /*     &stores {
+        position: relative;
+        display: inline-block;
+    }
+    &__socials {
+        position: relative;
+
+        padding-right: 5px;
+
+        &-buttons {
+            font-size: 0;
+            width: 217px;
+            padding: 15px 0 0 0;
+            list-style: none;
+
+        }
+        &-button {
+            display: inline-block;
+            margin-left: 6px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .as {
+            margin-right: 5px;
+            margin-bottom: 27px;
+        }
+        .gp {
+            margin-right: 0;
+            margin-bottom: 27px;
+        }
+    } */ }
   .footer__wrapper {
     position: relative;
     min-width: 975px;
@@ -702,12 +734,17 @@ background: blue;
       list-style: none;
       padding-right: 0px;
       /* border: 1px green solid; */ }
+    .footer__links-buttons_row {
+      margin-bottom: 24px; }
+    .footer__links-socials-button {
+      margin-right: 9px; }
     .footer__links-btns {
       display: inline-block;
       vertical-align: top;
       padding: 0;
       padding-top: 12px;
-      width: 250px;
+      padding-left: 68px;
+      width: 185px;
       list-style: none;
       /* border: 1px green solid; */ }
     .footer__links-header {
@@ -723,27 +760,3 @@ background: blue;
         color: #fff; }
         .footer__links-link a:hover {
           text-decoration: none; }
-  .footerstores {
-    position: relative;
-    display: inline-block; }
-  .footer__socials {
-    position: relative;
-    padding-right: 5px;
-    /* float: right; */
-    /* right:-5px; */ }
-    .footer__socials-buttons {
-      font-size: 0;
-      width: 217px;
-      padding: 15px 0 0 0;
-      list-style: none; }
-    .footer__socials-button {
-      display: inline-block;
-      margin-left: 6px; }
-      .footer__socials-button:last-child {
-        margin-right: 0; }
-    .footer__socials .as {
-      margin-right: 5px;
-      margin-bottom: 27px; }
-    .footer__socials .gp {
-      margin-right: 0;
-      margin-bottom: 27px; }
